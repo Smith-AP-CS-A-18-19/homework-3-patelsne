@@ -17,12 +17,14 @@ public class Homework3 {
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
-
+		Homework3.grade(this);
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
+		int summation = value1 + value2 + value3;
+		return summation;
 
 	}
 
@@ -30,6 +32,8 @@ public class Homework3 {
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
+		double mean = (value1 + value2 + value3)/3;
+		return mean;
 
 	}
 
@@ -37,6 +41,10 @@ public class Homework3 {
 	 * value 1, value2, and value3
 	 */
 	 public int productSumDifference() {
+		 int prod = value1*value2*value3;
+		 int summation= value1 + value2 + value3;
+		 int diff = prod - summation;
+		 return diff;
 
 	 }
 
@@ -44,6 +52,8 @@ public class Homework3 {
 	  * value3
 	  */
 	  public int sumSquares() {
+			int sumOfSquares = (value1*value1) + (value2*value2) + (value3*value3);
+			return sumOfSquares;
 
 	  }
 
